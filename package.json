@@ -1,0 +1,12 @@
+{
+  "name": "stylelint-config-anfema",
+  "version": "0.0.0",
+  "description": "Linting rules for anfema's CSS and SCSS styles",
+  "main": "index.js",
+  "repository": "git@github.com:anfema/stylelint-config-anfema.git",
+  "author": "Florian Pichler <f.pichler@anfe.ma>",
+  "license": "MIT",
+  "peerDependencies": {
+  	"stylelint": "^7"
+  }
+}
