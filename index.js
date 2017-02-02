@@ -1,15 +1,35 @@
-/* eslint-disable quote-props */
-
-const atRuleEmptyLineBefore = require('./rules/at-rule-empty-line-before.js');
-const atRuleNoUnknown = require('./rules/at-rule-no-unknown.js');
-const declarationBlockNoDuplicateProperties = require('./rules/declaration-block-no-duplicate-properties.js');
-const declarationBlockPropertiesOrder = require('./rules/declaration-block-properties-order.js');
-
 module.exports = {
 	rules: {
-		'at-rule-empty-line-before': atRuleEmptyLineBefore,
+		'at-rule-empty-line-before': [
+			'always',
+			{
+				except: [
+					'blockless-after-same-name-blockless',
+					'blockless-group',
+					'first-nested',
+				],
+				ignore: [
+					'after-comment',
+				],
+			},
+		],
 		'at-rule-name-case': 'lower',
-		'at-rule-no-unknown': atRuleNoUnknown,
+		'at-rule-no-unknown': [
+			true,
+			{
+				ignoreAtRules: [
+					// allowed SCSS rules
+					'else',
+					'for',
+					'function',
+					'if',
+					'include',
+					'mixin',
+					'return',
+					'while',
+				],
+			},
+		],
 		'at-rule-no-vendor-prefix': true,
 		'block-closing-brace-newline-after': 'always',
 		'block-closing-brace-newline-before': 'always',
@@ -23,17 +43,94 @@ module.exports = {
 		'comment-whitespace-inside': 'always',
 		'declaration-bang-space-after': 'never',
 		'declaration-bang-space-before': 'always',
-		'declaration-block-no-duplicate-properties': declarationBlockNoDuplicateProperties,
+		'declaration-block-no-duplicate-properties': [
+			true,
+			{
+				ignore: [
+					'consecutive-duplicates-with-different-values',
+				],
+			},
+		],
 		'declaration-block-no-ignored-properties': true,
 		'declaration-block-no-redundant-longhand-properties': true,
 		'declaration-block-no-shorthand-property-overrides': true,
-		'declaration-block-properties-order': declarationBlockPropertiesOrder,
+		'declaration-block-properties-order': [
+			[
+				// Position
+				'position',
+				'top',
+				'right',
+				'bottom',
+				'left',
+				'z-index',
+
+				// Display
+				'display',
+				'width',
+				'height',
+				'min-width',
+				'min-height',
+				'max-width',
+				'max-height',
+				'transform',
+				'float',
+				'clear',
+				'overflow',
+
+				// Flexbox
+				'flex',
+				'flex-grow',
+				'flex-shrink',
+				'flex-basis',
+				'flex-flow',
+				'flex-direction',
+				'flex-wrap',
+				'justify-content',
+				'align-items',
+				'align-self',
+				'order',
+
+				// Offsets
+				'margin',
+				'padding',
+
+				// Colors
+				'color',
+				'background',
+				'border',
+				'outline',
+				'box-shadow',
+
+				// Typography
+				'font',
+				'line-height',
+				'letter-spacing',
+				'text-align',
+				'vertical-align',
+				'text-transform',
+				'text-indent',
+				'white-space',
+				'overflow-wrap',
+				'text-shadow',
+				'text-rendering',
+
+				// Animations
+				'animation',
+				'transition',
+
+				// Other
+				'src',
+			],
+			{
+				unspecified: 'bottomAlphabetical',
+			},
+		],
 		'declaration-block-semicolon-newline-after': 'always',
 		'declaration-block-semicolon-space-before': 'never',
 		'declaration-colon-space-after': 'always-single-line',
 		'declaration-colon-space-before': 'never',
 		'font-weight-notation': 'numeric',
-		'indentation': 'tab',
+		indentation: 'tab',
 		'keyframe-declaration-no-important': true,
 		'length-zero-no-unit': true,
 		'max-empty-lines': 1,

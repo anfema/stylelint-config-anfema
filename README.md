@@ -1,2 +1,3 @@
 # stylelint-config-anfema
-anfema style StyleLint rules
+
+Linting rules for anfema's CSS and SCSS styles
