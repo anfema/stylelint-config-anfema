@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-anfema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Linting rules for anfema's CSS and SCSS styles",
   "main": "index.js",
   "repository": "git@github.com:anfema/stylelint-config-anfema.git",
