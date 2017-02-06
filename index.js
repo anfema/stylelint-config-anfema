@@ -1,4 +1,7 @@
 module.exports = {
+	plugins: [
+		'stylelint-order',
+	],
 	rules: {
 		'at-rule-empty-line-before': [
 			'always',
@@ -34,7 +37,6 @@ module.exports = {
 		'block-closing-brace-newline-after': 'always',
 		'block-closing-brace-newline-before': 'always',
 		'block-no-empty': true,
-		'block-no-single-line': true,
 		'block-opening-brace-newline-after': 'always',
 		'block-opening-brace-space-before': 'always',
 		'color-hex-case': 'upper',
@@ -51,10 +53,9 @@ module.exports = {
 				],
 			},
 		],
-		'declaration-block-no-ignored-properties': true,
 		'declaration-block-no-redundant-longhand-properties': true,
 		'declaration-block-no-shorthand-property-overrides': true,
-		'declaration-block-properties-order': [
+		'order/declaration-block-properties-specified-order': [
 			[
 				// Position
 				'position',
@@ -86,6 +87,7 @@ module.exports = {
 				'flex-direction',
 				'flex-wrap',
 				'justify-content',
+				'align-content',
 				'align-items',
 				'align-self',
 				'order',
@@ -136,21 +138,31 @@ module.exports = {
 		'max-empty-lines': 1,
 		'max-line-length': 120,
 		'max-nesting-depth': 4,
-		'no-indistinguishable-colors': [true, { threshold: 3 }],
 		'no-invalid-double-slash-comments': true,
 		'no-missing-end-of-source-newline': true,
 		'no-unknown-animations': true,
 		'property-case': 'lower',
 		'property-no-unknown': true,
 		'property-no-vendor-prefix': true,
+		'rule-empty-line-before': ['always', {
+			ignore: ['after-comment'],
+		}],
 		'selector-list-comma-newline-after': 'always',
 		'selector-list-comma-newline-before': 'never-multi-line',
 		'selector-max-empty-lines': 0,
 		'selector-max-specificity': '0,3,3',
 		'shorthand-property-no-redundant-values': true,
 		'string-quotes': 'double',
-		'stylelint-disable-reason': 'always-before',
-		'unit-blacklist': ['cm', 'pt', 'ch', 'mm', 'in', 'pc', 'ex'],
+		'unit-blacklist': [
+			'ch',
+			'cm',
+			'ex',
+			'in',
+			'mm',
+			'pc',
+			'pt',
+			// 'px', // most likely to be introduced later this year. Prefer rem
+		],
 		'unit-case': 'lower',
 		'value-list-comma-newline-after': 'always-multi-line',
 		'value-list-comma-newline-before': 'never-multi-line',
