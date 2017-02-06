@@ -15,7 +15,7 @@
   "author": "Florian Pichler <f.pichler@anfe.ma>",
   "license": "MIT",
   "peerDependencies": {
-    "stylelint": "^7",
+    "stylelint": "~7.7.1",
     "stylelint-order": "^0.2"
   },
   "devDependencies": {

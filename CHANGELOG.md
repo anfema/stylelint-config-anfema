@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0
+
+- Removed rule-empty-line-before until [broccoli-stylelint](https://github.com/billybonks/broccoli-stylelint)
+  supports stylelint ~7.8
+
 ## 1.1.0
 
 - Added changelog
