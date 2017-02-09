@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.0
+
+- Updated ordering
+- Used proper version for peerDependency stylelint-order
+
+
 ## 3.0.0
 
 - Fixed deprecations

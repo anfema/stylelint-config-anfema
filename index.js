@@ -94,16 +94,16 @@ module.exports = {
 
 				// Flexbox
 				'flex',
+				'flex-basis',
+				'flex-direction',
+				'flex-flow',
 				'flex-grow',
 				'flex-shrink',
-				'flex-basis',
-				'flex-flow',
-				'flex-direction',
 				'flex-wrap',
-				'justify-content',
 				'align-content',
 				'align-items',
 				'align-self',
+				'justify-content',
 				'order',
 
 				// Offsets
@@ -122,14 +122,14 @@ module.exports = {
 				'line-height',
 				'letter-spacing',
 				'text-align',
-				'vertical-align',
 				'text-decoration',
-				'text-transform',
 				'text-indent',
+				'text-rendering',
+				'text-shadow',
+				'text-transform',
+				'vertical-align',
 				'white-space',
 				'overflow-wrap',
-				'text-shadow',
-				'text-rendering',
 
 				// Animations
 				'animation',
