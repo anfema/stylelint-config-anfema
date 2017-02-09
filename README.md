@@ -6,6 +6,6 @@ Use with [stylelint](https://stylelint.io).
 
 ## Installation
 
-Packages to install: `stylelint stylelint-stylelint-order stylelint-config-anfema`.
+Packages to install: `stylelint@~7.8.0 stylelint-order@~0.2.2 stylelint-config-anfema@~1.2.0`.
 
 Install with yarn or npm, locally or globally. 

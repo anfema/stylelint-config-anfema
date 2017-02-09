@@ -123,6 +123,7 @@ module.exports = {
 				'letter-spacing',
 				'text-align',
 				'vertical-align',
+				'text-decoration',
 				'text-transform',
 				'text-indent',
 				'white-space',
@@ -156,7 +157,7 @@ module.exports = {
 		'selector-max-empty-lines': 0,
 		'selector-max-specificity': '0,3,3',
 		'shorthand-property-no-redundant-values': true,
-		'string-quotes': 'double',
+		'string-quotes': 'single',
 		'unit-blacklist': [
 			'ch',
 			'cm',
