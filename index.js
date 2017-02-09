@@ -8,7 +8,7 @@ module.exports = {
 			{
 				except: [
 					'blockless-after-same-name-blockless',
-					'blockless-group',
+					'blockless-after-blockless',
 					'first-nested',
 				],
 				ignore: [
@@ -145,13 +145,16 @@ module.exports = {
 		'property-case': 'lower',
 		'property-no-unknown': true,
 		'property-no-vendor-prefix': true,
-		// 'rule-empty-line-before': [
-		// 	'always', {
-		// 		ignore: [
-		// 			'after-comment',
-		// 		],
-		// 	},
-		// ],
+		'rule-empty-line-before': [
+			'always', {
+				except: [
+					'first-nested',
+				],
+				ignore: [
+					'after-comment',
+				],
+			},
+		],
 		'selector-list-comma-newline-after': 'always',
 		'selector-list-comma-newline-before': 'never-multi-line',
 		'selector-max-empty-lines': 0,

@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.0
+
+- Fixed deprecations
+- Enabled rule-empty-line-before
+
+
 ## 2.0.0
 
 - Updated peer dependency to stylelint@~7.8.0
