@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.1.0
+
+- Updated dependencies
+- Updated peer dependencies
+
 ## 4.0.0
 
 - Updated ordering
