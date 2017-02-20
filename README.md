@@ -8,7 +8,7 @@ Use with [stylelint](https://stylelint.io).
 
 ## Installation
 
-Packages to install: `stylelint@~7.9.0 stylelint-order@~0.3.0 stylelint-config-anfema@~4.1.0`.
+Packages to install: `stylelint@~7.9.0 stylelint-order@~0.3.0 stylelint-config-anfema@~4.2.0`.
 
 Install with yarn or npm, locally or globally. 
 

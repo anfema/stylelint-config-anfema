@@ -64,7 +64,16 @@ module.exports = {
 		'keyframe-declaration-no-important': true,
 		'length-zero-no-unit': true,
 		'max-empty-lines': 1,
-		'max-line-length': 120,
+		'max-line-length': [
+			120,
+			{
+				ignorePattern: [
+					'/^@import\\s+/',
+					'/@include/',
+					'/<svg/',
+				],
+			},
+		],
 		'max-nesting-depth': 4,
 		'no-invalid-double-slash-comments': true,
 		'no-missing-end-of-source-newline': true,

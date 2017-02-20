@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.2.0
+
+- Updated max-line-length rule to support inline svg images
+
 ## 4.1.0
 
 - Updated dependencies
