@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-anfema",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "Linting rules for anfema's CSS and SCSS styles",
   "keywords": [
     "stylelint",
@@ -16,14 +16,14 @@
   "license": "MIT",
   "peerDependencies": {
     "stylelint": "~7.9.0",
-    "stylelint-order": "~0.3.0"
+    "stylelint-order": "~0.4.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
-    "eslint-config-airbnb-base": "^11.1.0",
-    "eslint-config-anfema": "^2.0.0",
-    "eslint-plugin-babel": "^4.0.1",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-config-anfema": "^3.1.0",
+    "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.2.0"
   }
 }
