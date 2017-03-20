@@ -14,7 +14,7 @@ Install with yarn or npm, locally or globally.
 
 
 
-## credits
+## Credits
 
 - [@pichfl](https://github.com/pichfl) 
 - [@zehnnach](https://github.com/zehnnach)

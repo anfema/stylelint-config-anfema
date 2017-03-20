@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.0
+
+- Updated stylelint-order
+
 ## 4.2.0
 
 - Updated max-line-length rule to support inline svg images
