@@ -8,9 +8,23 @@ Use with [stylelint](https://stylelint.io).
 
 ## Installation
 
-Packages to install: `stylelint@~7.9.0 stylelint-order@~0.3.0 stylelint-config-anfema@~4.2.0`.
+Packages to install: `stylelint@~7.10.1 stylelint-order@~0.4.3 stylelint-config-anfema@~4.3.1`.
 
 Install with yarn or npm, locally or globally. 
+
+
+
+## Usage
+
+### Default
+
+In your `.styelintrc.js`:
+
+```js
+module.exports = {
+	extends: 'stylelint-config-anfema',
+}
+```
 
 
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.3.1
+
+- Removed Deprecation Warning: "order/declaration-block-properties-specified-order" has been removed in 0.4. Instead use "order/properties-order" rule.
+
 ## 4.3.0
 
 - Updated stylelint-order

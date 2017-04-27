@@ -78,7 +78,7 @@ module.exports = {
 		'no-invalid-double-slash-comments': true,
 		'no-missing-end-of-source-newline': true,
 		'no-unknown-animations': true,
-		'order/declaration-block-properties-specified-order': [
+		'order/properties-order': [
 			[
 				// Position
 				'position',
