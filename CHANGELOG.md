@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.4.2 
+
+- Fix: Error in rules definition
+
+## 4.4.1 
+
+- Updated README
+
+## 4.4.0
+
+- Updated order/properties-order to reflect rule changes in stylelint-order@0.5.0
+
 ## 4.3.1
 
 - Removed Deprecation Warning: "order/declaration-block-properties-specified-order" has been removed in 0.4. Instead use "order/properties-order" rule.
