@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.4.3
+
+- Updated peer dependencies
+
 ## 4.4.2 
 
 - Fix: Error in rules definition
