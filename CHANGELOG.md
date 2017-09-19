@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.0.0
+
+- Added rules for CSS Grids
+
 ## 4.4.3
 
 - Updated peer dependencies

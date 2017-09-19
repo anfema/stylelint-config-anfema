@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-anfema",
-  "version": "4.4.3",
+  "version": "5.0.0",
   "description": "Linting rules for anfema's CSS and SCSS styles",
   "keywords": [
     "stylelint",
@@ -12,14 +12,14 @@
     "index.js"
   ],
   "scripts": {
-  	"lint": "eslint ."
+    "lint": "eslint ."
   },
   "repository": "git@github.com:anfema/stylelint-config-anfema.git",
   "author": "Florian Pichler <f.pichler@anfe.ma>",
   "license": "MIT",
   "peerDependencies": {
-    "stylelint": "~8.0.0",
-    "stylelint-order": "~0.6.0"
+    "stylelint": "~8.1",
+    "stylelint-order": "~0.6"
   },
   "devDependencies": {
     "babel-eslint": "~7.2.3",

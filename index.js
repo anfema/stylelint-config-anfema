@@ -22,6 +22,7 @@ module.exports = {
 			{
 				ignoreAtRules: [
 					// allowed SCSS rules
+					'content',
 					'else',
 					'for',
 					'function',
@@ -111,6 +112,27 @@ module.exports = {
 						'clear',
 						'overflow',
 						'box-sizing',
+					],
+				},
+
+				// Grid
+				{
+					properties: [
+						'grid-area',
+						'grid-auto-columns',
+						'grid-auto-flow',
+						'grid-auto-rows',
+						'grid-column',
+						'grid-column-gap',
+						'grid-column-start',
+						'grid-column-end',
+						'grid-row',
+						'grid-row-gap',
+						'grid-row-start',
+						'grid-row-end',
+						'grid-template-areas',
+						'grid-template-columns',
+						'grid-template-rows',
 					],
 				},
 
