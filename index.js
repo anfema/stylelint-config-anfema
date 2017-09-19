@@ -70,7 +70,8 @@ module.exports = {
 			{
 				ignorePattern: [
 					'/^@import\\s+/',
-					'/@include/',
+					'/^\\s*@include/',
+					'/^\\s*@return/',
 					'/<svg/',
 				],
 			},
@@ -281,7 +282,7 @@ module.exports = {
 			// 'px', // most likely to be introduced later this year. Prefer rem
 		],
 		'unit-case': 'lower',
-		'value-list-comma-newline-after': 'always-multi-line',
+		'value-list-comma-newline-after': null,
 		'value-list-comma-newline-before': 'never-multi-line',
 		'value-list-comma-space-after': 'always-single-line',
 		'value-list-comma-space-before': 'never',

@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.1
+
+- Disable `value-list-comma-newline-after` to increase Prettier compatibility
+
 ## 6.0.0
 
 - Use lowercase Hex colors to match Prettier print
