@@ -40,7 +40,7 @@ module.exports = {
 		'block-no-empty': true,
 		'block-opening-brace-newline-after': 'always',
 		'block-opening-brace-space-before': 'always',
-		'color-hex-case': 'upper',
+		'color-hex-case': 'lower',
 		'color-no-invalid-hex': true,
 		'comment-no-empty': true,
 		'comment-whitespace-inside': 'always',

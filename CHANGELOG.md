@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0
+
+- Use lowercase Hex colors to match Prettier print
+
 ## 5.0.0
 
 - Added rules for CSS Grids
