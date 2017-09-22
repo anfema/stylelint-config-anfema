@@ -1,7 +1,5 @@
 module.exports = {
-	plugins: [
-		'stylelint-order',
-	],
+	plugins: ['stylelint-order'],
 	rules: {
 		'at-rule-empty-line-before': [
 			'always',
@@ -11,9 +9,7 @@ module.exports = {
 					'blockless-after-blockless',
 					'first-nested',
 				],
-				ignore: [
-					'after-comment',
-				],
+				ignore: ['after-comment'],
 			},
 		],
 		'at-rule-name-case': 'lower',
@@ -49,9 +45,7 @@ module.exports = {
 		'declaration-block-no-duplicate-properties': [
 			true,
 			{
-				ignore: [
-					'consecutive-duplicates-with-different-values',
-				],
+				ignore: ['consecutive-duplicates-with-different-values'],
 			},
 		],
 		'declaration-block-no-redundant-longhand-properties': true,
@@ -61,19 +55,19 @@ module.exports = {
 		'declaration-colon-space-after': 'always-single-line',
 		'declaration-colon-space-before': 'never',
 		'font-weight-notation': 'numeric',
-		indentation: 'tab',
+		indentation: [
+			'tab',
+			{
+				ignore: ['inside-parens'],
+			},
+		],
 		'keyframe-declaration-no-important': true,
 		'length-zero-no-unit': true,
 		'max-empty-lines': 1,
 		'max-line-length': [
 			120,
 			{
-				ignorePattern: [
-					'/^@import\\s+/',
-					'/^\\s*@include/',
-					'/^\\s*@return/',
-					'/<svg/',
-				],
+				ignorePattern: ['/^@import\\s+/', '/^\\s*@include/', '/^\\s*@return/', '/<svg/'],
 			},
 		],
 		'max-nesting-depth': 4,
@@ -84,14 +78,7 @@ module.exports = {
 			[
 				// Position
 				{
-					properties: [
-						'position',
-						'top',
-						'right',
-						'bottom',
-						'left',
-						'z-index',
-					],
+					properties: ['position', 'top', 'right', 'bottom', 'left', 'z-index'],
 				},
 
 				// Display
@@ -256,13 +243,10 @@ module.exports = {
 		'property-no-unknown': true,
 		'property-no-vendor-prefix': true,
 		'rule-empty-line-before': [
-			'always', {
-				except: [
-					'first-nested',
-				],
-				ignore: [
-					'after-comment',
-				],
+			'always',
+			{
+				except: ['first-nested'],
+				ignore: ['after-comment'],
 			},
 		],
 		'selector-list-comma-newline-after': 'always',

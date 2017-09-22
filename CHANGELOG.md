@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.0.2
+
+- Add `.prettierrc` to the project
+- Modify `indentation` rule to increase Prettier compatibility
+
 ## 6.0.1
 
 - Disable `value-list-comma-newline-after` to increase Prettier compatibility
