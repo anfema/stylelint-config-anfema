@@ -12,21 +12,24 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint **/*.js",
+    "fix": "eslint **/*.js --fix && prettier **/*.js --write"
   },
   "repository": "git@github.com:anfema/stylelint-config-anfema.git",
   "author": "Florian Pichler <f.pichler@anfe.ma>",
   "license": "MIT",
   "peerDependencies": {
-    "stylelint": "~8.1.1",
-    "stylelint-order": "~0.6.0"
+    "stylelint": "~9",
+    "stylelint-order": "~0.8.0"
   },
   "devDependencies": {
-    "babel-eslint": "~7.2.3",
-    "eslint": "~4.0.0",
-    "eslint-config-airbnb-base": "~11.2.0",
-    "eslint-config-anfema": "3.2.0",
-    "eslint-plugin-babel": "~4.1.1",
-    "eslint-plugin-import": "~2.3.0"
+    "babel-eslint": "~8",
+    "eslint": "~5",
+    "eslint-config-anfema": "^5.3.0",
+    "eslint-config-prettier": "~2",
+    "eslint-plugin-babel": "~5",
+    "eslint-plugin-import": "~2",
+    "eslint-plugin-prettier": "~2",
+    "prettier": "~1"
   }
 }

@@ -1,3 +1,3 @@
 module.exports = {
-	extends: 'anfema',
+	extends: 'anfema/node',
 };
