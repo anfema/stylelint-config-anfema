@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.1.0
+
+- Updated peer dependencies
+
 ## 6.0.2
 
 - Add `.prettierrc` to the project
